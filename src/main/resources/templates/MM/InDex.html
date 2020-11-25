@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="de" xmlns:th="http://www.thymeleaf.org">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Welcome to Mreza Mladih</title>
+		<link rel="stylesheet" type="text/css" href="../static/css/styles.css" th:href="@{/css/styles.css}">
+		<link href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<!-- NAVIGATIONSLEISTE -->
+
+
+
+		<nav class="header-nav">
+
+			<div class="container desktop-nav">
+				<div class="row">
+					<div class="col-6">
+
+						<a href="#" th:href="@{/}">
+							<img src="../static/img/MrezaMladih_klein_neu.PNG" th:src="@{/img/MrezaMladih_klein_neu.PNG}" alt="Test-Logo von Mreza Mladih">
+						</a>
+
+						<ul>   <!-- Navigationsleiste Optionen -->
+							<li><a href="#" th:href="@{/}"> Home</a></li>
+							<li><a href="forum" th:href="@{/forum}">Forum</a></li>
+							<li><a href="myprofile" th:href="@{/myprofile}">My Profile</a></li>
+							<li><a href="facebook.com/...">Facebook</a></li>
+							<li><a href="https://www.instagram.com/mrezamladihdijaspore/">Instagram</a></li>
+							<li><a href="/login">Login </a></li>
+							<li><a href="impressum.html" th:href="@{/impressum}">Impressum</a></li>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+
+
+		</nav>
+
+		<!-- LÄNDERTAFEL -->
+
+		<div class="bigdiv">
+			<div class="Flaggenfeld">
+			<div class="Headline">
+				<h1 class="neon" data-text="Welcome to official Page of Mreza Mladih">Welcome to the official Page of Mreza Mladih</h1>
+			</div>
+
+           <div id="australia">
+						 <div class="AustralianIcon">
+							 <a href="countryPages/Australia/australia.html" th:href="@{/countryPages/Australia/australia.html}">
+						 	<img class="FlagIcon" src="../static/img/australia.png"  th:src="@{/img/australia.png}" alt="Australian Flag">
+						</a>
+						 </div>
+						 <a href="countryPages/Australia/australia.html">
+						 <button class="LandKnopf">Australia</button>
+					   </a>
+					 </div>
+
+					 <div id="austria">
+						 <div class="AustriaIcon">
+							 <a href="countryPages/Austria/austria.html">
+						 	<img class="FlagIcon" src="../static/img/austria.png" th:src="@{/img/austria.png}" alt="Austrian Flag">
+						</a>
+						 </div>
+						 <a href="countryPages/Austria/austria.html">
+						 <button class="LandKnopf"> Austria </button>
+					 </a>
+					 </div>
+
+					 <div id="Belgium">
+						 <div class="BelgiumIcon">
+							 <a href="countryPages/Belgium/belgium.html">
+						 	<img class="FlagIcon" src="../static/img/belgium.png" th:src="@{/img/belgium.png}" alt="Belgium Flag">
+						</a>
+						 </div>
+						 <a href="countryPages/Belgium/belgium.html">
+						 <button class="LandKnopf"> Belgium </button>
+					 </a>
+					 </div>
+
+					 <div id="Bosnia">
+						 <div class="BosniaIcon">
+							 <a href="countryPages/Bosnia/bosnia.html">
+						 	<img class="FlagIcon" src="../static/img/bosnia-and-herzegovina.png"  th:src="@{/img/bosnia-and-herzegovina.png}" alt="Bosnian Flag">
+						</a>
+						 </div>
+						 <a href="countryPages/Bosnia/bosnia.html">
+						 <button class="LandKnopf"> Bosna </button>
+					 </a>
+					 </div>
+      <br>
+					 <div id="Canada">
+						 <div class="CanadaIcon">
+							 <a href="countryPages/Canada/canada.html">
+						 	<img class="FlagIcon" src="../static/img/canada.png"  th:src="@{/img/canada.png}" alt="Canadian Flag">
+						</a>
+						 </div>
+						 <a href="countryPages/Canada/canada.html">
+						 <button class="LandKnopf"> Canada </button>
+					 </a>
+					 </div>
+
+					 <div id="Denmark">
+						 <div class="DenmakIcon">
+							 <a href="countryPages/Denmark/denmark.html">
+							 <img class="FlagIcon" src="../static/img/denmark.png"  th:src="@{/img/denmark.png}" alt="Denmark Flag">
+						 </a>
+						 </div>
+						 <a href="countryPages/Denmark/denmark.html">
+						 <button class="LandKnopf"> Denmark </button>
+					 </a>
+					 </div>
+
+					 <div id="Finnland">
+						 <div class="FinnlandIcon">
+							 <a href="countryPages/Finland/finland.html">
+						 	 <img class="FlagIcon" src="../static/img/finland.png" th:src="@{/img/finland.png}" alt="Finland Flag">
+						 </a>
+						 </div>
+						 <a href="countryPages/Finland/finland.html">
+						 <button class="LandKnopf"> Finland </button>
+					 </a>
+					 </div>
+
+					 <div id="France">
+						 <div class="FranceIcon">
+							 <a href="countryPages/France/france.html">
+						 	<img class="FlagIcon" src="../static/img/france.png" th:src="@{/img/france.png}" alt="France Flag">
+						</a>
+						 </div>
+						 <a href="countryPages/France/france.html">
+						 <button class="LandKnopf"> France </button>
+					 </a>
+					 </div>
+       <br>
+					 <div id="Germany">
+						 <div class="GermanIcon">
+							 <a href="countryPages/Germany/Germany.html">
+						 	<img class="FlagIcon" src="../static/img/germany.png" th:src="@{/img/germany.png}" alt="German Flag">
+						</a>
+						 </div>
+						 <a href="countryPages/Germany/Germany.html">
+						 <button class="LandKnopf" > Germany </button>
+						 </a>
+					 </div>
+
+					 <div id="GB">
+						 <div class="GBIcon">
+							 <a href="countryPages/Great Britain/uk.html">
+						 	<img class="FlagIcon" src="../static/img/united-kingdom.png" th:src="@{/img/united-kingdom.png}" alt="United Kingdom Flag">
+						</a>
+						 </div>
+						 <a href="countryPages/Great Britain/uk.html">
+						 <button class="LandKnopf">   UK</button>
+					 </a>
+					 </div>
+
+					 <div id="Ireland">
+						 <div class="IrelandIcon">
+							 <a href="countryPages/Ireland/ireland.html">
+						 	<img class="FlagIcon" src="../static/img/ireland.png" th:src="@{/img/ireland.png}" alt="Ireland Flag">
+						</a>
+						 </div>
+						 	<a href="countryPages/Ireland/ireland.html">
+						 <button class="LandKnopf"> Ireland </button>
+					 </a>
+					 </div>
+
+					 <div id="Italy">
+						 <div class="ItalyIcon">
+							 <a href="countryPages/Italy/italy.html">
+						 	<img class="FlagIcon" src="../static/img/italy.png" th:src="@{/img/italy.png}" alt="Italy Flag">
+						</a>
+						 </div>
+						 <a href="countryPages/Italy/italy.html">
+						 <button class="LandKnopf"> Italy </button>
+					 </a>
+					 </div>
+       <br>
+					 <div id="Lichtenstein">
+						 <div class="LichtensteinIcon">
+							 <a href="countryPages/Liechtenstein/liechtenstein.html">
+						 	<img class="FlagIcon" src="../static/img/liechtenstein.png" th:src="@{/img/liechtenstein.png}" alt="Lichtenstein Flag">
+						</a>
+						 </div>
+						 <a href="countryPages/Liechtenstein/liechtenstein.html">
+						 <button class="LandKnopf"> Liechtenstein </button>
+					 </a>
+					 </div>
+
+					 <div id="Luxemburg">
+						 <div class="LuxemburgIcon">
+							 <a href="countryPages/Luxembourg/luxembourg.html">
+						 	<img class="FlagIcon" src="../static/img/luxembourg.png" th:src="@{/img/luxembourg.png}" alt="Luxembourg Flag">
+						</a>
+						 </div>
+						 <a href="countryPages/Luxembourg/luxembourg.html">
+						 <button class="LandKnopf"> Luxembourg </button>
+					 </a>
+					 </div>
+
+					 <div id="Netherland">
+						 <div class="NetherlandIcon">
+							 <a href="countryPages/Netherlands/netherlands.html">
+						 	<img class="FlagIcon" src="../static/img/netherlands.png" th:src="@{/img/netherlands.png}" alt="Netherlands Flag">
+						</a>
+						 </div>
+						 <a href="countryPages/Netherlands/netherlands.html">
+						 <button class="LandKnopf"> Netherlands </button>
+					 </a>
+					 </div>
+
+					 <div id="Norway">
+						 <div class="NorwayIcon">
+							 <a href="countryPages/Norway/norway.html">
+						 	<img class="FlagIcon" src="../static/img/norway.png" th:src="@{/img/norway.png}" alt="Norway Flag">
+						</a>
+						 </div>
+						 <a href="countryPages/Norway/norway.html">
+						 <button class="LandKnopf"> Norway </button>
+					 </a>
+					 </div>
+       <br>
+					 <div id="Sweden">
+						 <div class="SwedenIcon">
+							 <a href="countryPages/Sweden/sweden.html">
+						 	<img class="FlagIcon" src="../static/img/sweden.png" th:src="@{/img/sweden.png}" alt="Sweden Flag">
+						</a>
+						 </div>
+						 <a href="countryPages/Sweden/sweden.html">
+						 <button class="LandKnopf"> Sweden </button>
+					 </a>
+					 </div>
+
+					 <div id="Swiss">
+						 <div class="SwissIcon">
+							 <a href="countryPages/Switzerland/switzerland.html">
+						 	<img class="FlagIcon" src="../static/img/switzerland.png" th:src="@{/img/switzerland.png}" alt="Switzerland Flag">
+						</a>
+						 </div>
+						 <a href="countryPages/Switzerland/switzerland.html">
+						 <button class="LandKnopf"> Switzerland </button>
+					 </a>
+					 </div>
+
+					 <div id="USA">
+						 <div class="USAIcon">
+							 <a href="countryPages/USA/usa.html">
+						 	<img class="FlagIcon" src="../static/img/united-states-of-america.png" th:src="@{/img/united-states-of-america.png}" alt=" USA Flag">
+						</a>
+						 </div>
+						 <a href="countryPages/USA/usa.html">
+						 <button class="LandKnopf"> USA </button>
+					 </a>
+					 </div>
+
+				</div>
+		</div>
+
+
+	</body>
+<footer>
+
+</footer>
+</html>
