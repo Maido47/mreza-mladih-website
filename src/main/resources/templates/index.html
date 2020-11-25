@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html lang="de" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <title> Mreza Mladih Home </title>
+    <link rel="stylesheet" type="text/css" href=../static/css/styles.css th:href="@{/css/styles.css}">
+
+</head>
+
+<body>
+
+<header class="header">
+    <a href="#" th:href="@{/}" class="logo">Mreza Mladih</a>
+    <input class="menu-btn" type="checkbox" id="menu-btn"/>
+    <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+    <ul class="menu">
+        <li><a href="forum" th:href="@{/forum}">Forum</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="Impressum.html" th:href="@{/impressum}">Impressum</a></li>
+        <li><a href="https://www.instagram.com/mrezamladihdijaspore/">Instagram</a></li>
+        <li><a href="file:///C:/Users/malik/Desktop/projekte/MM%20Seite%202/Shop.html">Shop</a></li>
+    </ul>
+</header>
+
+<div class="container">
+    <!--Australia-->
+    <div class="select-box">
+        <div class="Flag">
+            <img class="Flag" src="../static/img/australia.png" th:src="@{/img/australia.png}">
+        </div>
+        <div class="options-container">
+            <div class="option">
+                <input type="radio" class="radio" id="Melbourne" name="category"/>
+                <a href="countryPages/Australia/melbourne.html" th:href="@{/countryPages/Australia/melbourne.html}">
+                    <p>Melbourne</p></a>
+            </div>
+
+
+            <div class="option">
+                <input type="radio" class="radio" id="Noblepark" name="category"/>
+                <a href="countryPages/Australia/noblepark.html" th:href="@{/countryPages/Australia/noblepark.html}"><p>Noblepark</p></a>
+            </div>
+
+
+            <div class="option">
+                <input type="radio" class="radio" id="Sydney" name="category"/>
+                <a href="countryPages/Australia/sydney.html" th:href="@{/countryPages/Australia/sydney.html}"><p>Sydney</p></a>
+            </div>
+
+        </div>
+
+        <div class="selected">
+            Select an Australian city
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search for . . ."/>
+        </div>
+    </div>
+
+    <!--Austria-->
+    <div class="select-box">
+        <div class="Flag">
+            <img class="Flag" src="../static/img/austria.png" th:src="@{/img/austria.png}">
+        </div>
+        <div class="options-container">
+            <div class="option">
+                <input type="radio" class="radio" id="Graz" name="category"/>
+                <a href="countryPages/Austria/graz.html" th:href="@{/countryPages/Austria/graz.html}"> Graz </a>
+            </div>
+
+
+            <div class="option">
+                <input type="radio" class="radio" id="Klagenfurt" name="category"/>
+                <a href="countryPages/Austria/klagenfurt.html" th:href="@{/countryPages/Austria/klagenfurt.html}"></a>
+            </div>
+
+
+            <div class="option">
+                <input type="radio" class="radio" id="Linz" name="category"/>
+                <a href="countryPages/Austria/linz.html" th:href="@{/countryPages/Austria/linz.html}"></a>
+            </div>
+
+
+
+                <div class="option">
+                    <input type="radio" class="radio" id="Salzburg" name="category"/>
+                    <a href="countryPages/Austria/salzburg.html" th:href="@{/countryPages/Austria/salzburg.html}"></a>
+                </div>
+
+
+                <div class="option">
+                    <input type="radio" class="radio" id="Villach" name="category"/>
+                    <a href="countryPages/Austria/villach.html" th:href="@{/countryPages/Austria/villach.html}"></a>
+                </div>
+
+
+                <div class="option">
+                    <input type="radio" class="radio" id="Vorarlberg" name="category"/>
+                    <a href="countryPages/Austria/vorarlberg.html" th:href="@{/countryPages/Austria/voralberg.html}"></a>
+                </div>
+
+
+
+                <div class="option">
+                    <input type="radio" class="radio" id="Wels" name="category"/>
+                    <a href="countryPages/Austria/wels.html" th:href="@{/countryPages/Austria/wels.html}"></a>
+                </div>
+
+
+                <div class="option">
+                    <input type="radio" class="radio" id="Wien" name="category"/>
+                    <a href="countryPages/Austria/wien.html" th:href="@{/countryPages/Austria/wien.html}"></a>
+                </div>
+
+
+        </div>
+
+        <div class="selected">
+            Select an Austrian city
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Start Typing..."/>
+        </div>
+    </div>
+
+    <!--Belgium-->
+    <div class="select-box">
+        <div class="Flag">
+            <img class="Flag" src="../static/img/belgium.png" th:src="@{/img/belgium.png}">
+        </div>
+        <div class="options-container">
+                <div class="option">
+                    <input type="radio" class="radio" id="Antwerpen" name="category"/>
+                    <a href="countryPages/Belgium/antwerpen.html" th:href="@{/countryPages/Belgium/antwerpen.html}"></a>
+                </div>
+
+
+                <div class="option">
+                    <input type="radio" class="radio" id="Gent" name="category"/>
+                    <a href="countryPages/Belgium/gent.html" th:href="@{/countryPages/Belgium/gent.html}"></a>
+                </div>
+
+
+                <div class="option">
+                    <input type="radio" class="radio" id="Liege" name="category"/>
+                    <a href="countryPages/Belgium/liege.html" th:href="@{/countryPages/Belgium/liege.html}"></a>
+                </div>
+
+
+        </div>
+
+        <div class="selected">
+            Select a Belgian City
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Start Typing..."/>
+        </div>
+    </div>
+
+    <!--Bosna-->
+
+    <div class="select-box">
+        <div class="Flag">
+            <img class="Flag"
+                 src="../static/img/bosnia-and-herzegovina.png" th:src="@{/img/bosnia-and-herzegovina.png}"
+                 alt="Bosnian Flag">
+        </div>
+        <div class="options-container">
+                <div class="option">
+                    <input type="radio" class="radio" id="Bihac" name="category"/>
+                    <a href="countryPages/Bosnia/bihac.html" th:href="@{/countryPages/Bosnia/bihac.html}"></a>
+                </div>
+
+
+                <div class="option">
+                    <input type="radio" class="radio" id="Bugojno" name="category"/>
+                    <a href="countryPages/Bosnia/bugojno.html" th:href="@{/countryPages/Bosnia/bugojno.html}"></a>
+                </div>
+
+
+                <div class="option">
+                    <input type="radio" class="radio" id="Buzim" name="category"/>
+                    <a href="countryPages/Bosnia/buzim.html" th:href="@{/countryPages/Bosnia/buzim.html}"></a>
+                </div>
+
+
+                <div class="option">
+                    <input type="radio" class="radio" id="Donji Vakuf" name="category"/>
+                    <a href="countryPages/Bosnia/donjivakuf.html" th:href="@{/countryPages/Bosnia/donjivakuf.html}"></a>
+                </div>
+
+
+                <div class="option">
+                    <input type="radio" class="radio" id="Fojnica" name="category"/>
+                    <a href="countryPages/Bosnia/fojnica.html" th:href="@{/countryPages/Bosnia/fojnica.html}"></a>
+                </div>
+
+
+                <div class="option">
+                    <input type="radio" class="radio" id="Gorazde" name="category"/>
+                    <a href="countryPages/Bosnia/gorazde.html" th:href="@{/countryPages/Bosnia/gorazde.html}"></a>
+                </div>
+
+
+                <div class="option">
+                    <input type="radio" class="radio" id="Gradacac" name="category"/>
+                    <a href="countryPages/Bosnia/gradacac.html" th:href="@{/countryPages/Bosnia/gradacac.html}"></a>
+                </div>
+
+
+                <div class="option">
+                    <input type="radio" class="radio" id="Jablanica" name="category"/>
+                    <a href="countryPages/Bosnia/jablanica.html" th:href="@{/countryPages/Bosnia/jablanica.html}"></a>
+                </div>
+
+
+                <div class="option">
+                    <input type="radio" class="radio" id="Kakanj" name="category"/>
+                    <a href="countryPages/Bosnia/kakanj.html" th:href="@{/countryPages/Bosnia/kakanj.html}"></a>
+                </div>
+
+
+                <div class="option">
+                    <input type="radio" class="radio" id="Konjic" name="category"/>
+                    <a href="countryPages/Bosnia/konjic.html" th:href="@{/countryPages/Bosnia/konjic.html}"></a>
+                </div>
+
+
+                <div class="option">
+                    <input type="radio" class="radio" id="Kozarac" name="category"/>
+                    <a href="countryPages/Bosnia/kozarac.html" th:href="@{/countryPages/Bosnia/kozarac.html}"></a>
+                </div>
+
+
+                <div class="option">
+                    <input type="radio" class="radio" id="Kruscica" name="category"/>
+                    <a href="countryPages/Bosnia/kruscica.html" th:href="@{/countryPages/Bosnia/kruscica.html}"></a>
+                </div>
+
+
+                <div class="option">
+                    <input type="radio" class="radio" id="Mostar" name="category"/>
+                    <a href="countryPages/Bosnia/mostar.html" th:href="@{/countryPages/Bosnia/mostar.html}"></a>
+                </div>
+
+
+                <div class="option">
+                    <input type="radio" class="radio" id="Prozor" name="category"/>
+                    <a href="countryPages/Bosnia/prozor.html" th:href="@{/countryPages/Bosnia/prozor.html}"></a>
+                </div>
+
+
+                <div class="option">
+                    <input type="radio" class="radio" id="Sanski Most" name="category"/>
+                    <a href="countryPages/Bosnia/sana.html" th:href="@{/countryPages/Bosnia/sana.html}"></a>
+                </div>
+
+
+                <div class="option">
+                    <input type="radio" class="radio" id="Sarajevo" name="category"/>
+                    <a href="countryPages/Bosnia/sarajevo.html" th:href="@{/countryPages/Bosnia/sarajevo.html}"></a>
+                </div>
+
+
+                <div class="option">
+                    <input type="radio" class="radio" id="Stolac" name="category"/>
+                    <a href="countryPages/Bosnia/stolac.html" th:href="@{/countryPages/Bosnia/stolac.html}"></a>
+                </div>
+
+
+                <div class="option">
+                    <input type="radio" class="radio" id="Tesanj" name="category"/>
+                    <a href="countryPages/Bosnia/tesanj.html" th:href="@{/countryPages/Bosnia/tesanj.html}"></a>
+                </div>
+
+
+                <div class="option">
+                    <input type="radio" class="radio" id="Tuzla" name="category"/>
+                    <a href="countryPages/Bosnia/tuzla.html" th:href="@{/countryPages/Bosnia/tuzla.html}"></a>
+                </div>
+
+
+                <div class="option">
+                    <input type="radio" class="radio" id="Vakuf" name="category"/>
+                    <a href="countryPages/Bosnia/vakuf.html" th:href="@{/countryPages/Bosnia/vakuf.html}"></a>
+                </div>
+
+
+                <div class="option">
+                    <input type="radio" class="radio" id="Visoko" name="category"/>
+                    <a href="countryPages/Bosnia/visoko.html" th:href="@{/countryPages/Bosnia/visoko.html}"></a>
+                </div>
+
+
+                <div class="option">
+                    <input type="radio" class="radio" id="Vitez" name="category"/>
+                    <a href="countryPages/Bosnia/vitez.html" th:href="@{/countryPages/Bosnia/vitez.html}"></a>
+                </div>
+
+
+                <div class="option">
+                    <input type="radio" class="radio" id="Zavidovici" name="category"/>
+                    <a href="countryPages/Bosnia/zavidovici.html" th:href="@{/countryPages/Bosnia/zavidovici.html}"></a>
+                </div>
+
+
+                <div class="option">
+                    <input type="radio" class="radio" id="Zenica" name="category"/>
+                    <a href="countryPages/Bosnia/zenica.html" th:href="@{/countryPages/Bosnia/zenica.html}"></a>
+                </div>
+
+
+                <div class="option">
+                    <input type="radio" class="radio" id="Zivinice" name="category"/>
+                    <a href="countryPages/Bosnia/zivinice.html" th:href="@{/countryPages/Bosnia/zivinice.html}"></a>
+                </div>
+
+        </div>
+
+        <div class="selected">
+            Select a Bosnian City
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Start Typing..."/>
+        </div>
+    </div>
+
+    <!--Canada-->
+    <div class="select-box">
+        <div class="Flag">
+            <img class="Flag" src="../static/img/canada.png" th:src="@{/img/canada.png}">
+        </div>
+        <div class="options-container">
+            <a href="countryPages/Canada/hamilton.html" th:href="@{/countryPages/Canada/hamilton.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Hamilton" name="category"/>
+                    <label for="Hamilton">Hamilton</label>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="selected">
+            Select a Canadian City
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Start Typing..."/>
+        </div>
+    </div>
+
+
+    <!--Denmark-->
+    <div class="select-box">
+        <div class="Flag">
+            <img class="Flag" src="../static/img/denmark.png" th:src="@{/img/denmark.png}">
+        </div>
+        <div class="options-container">
+            <a href="countryPages/Denmark/randers.html" th:href="@{/countryPages/Denmark/randers.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Randers" name="category"/>
+                    <label for="Randers">Randers</label>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="selected">
+            Select a Danish City
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Start Typing..."/>
+        </div>
+    </div>
+
+
+    <!--Finland-->
+    <div class="select-box">
+        <div class="Flag">
+            <img class="Flag" src="../static/img/finland.png" th:src="@{/img/finland.png}">
+        </div>
+        <div class="options-container">
+
+            <div class="option">
+                <input type="radio" class="radio" id="" name="category"/>
+                <label for="">No city known in Mreza Mladih</label>
+            </div>
+        </div>
+
+        <div class="selected">
+            Select a Finnish City
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Start Typing..."/>
+        </div>
+    </div>
+
+    <!--France-->
+    <div class="select-box">
+        <div class="Flag">
+            <img class="Flag" src="../static/img/france.png" th:src="@{/img/france.png}">
+        </div>
+        <div class="options-container">
+            <a href="countryPages/France/paris.html" th:href="@{/countryPages/France/paris.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Paris" name="category"/>
+                    <label for="Paris">Paris</label>
+                </div>
+            </a>
+
+            <a href="countryPages/France/sochaux.html" th:href="@{/countryPages/France/sochaux.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Sochaux" name="category"/>
+                    <label for="Sochaux">Sochaux</label>
+                </div>
+            </a>
+
+            <a href="countryPages/France/strasbourg.html" th:href="@{/countryPages/France/strasbourg.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Strasbourg" name="category"/>
+                    <label for="Strasbourg">Strasbourg</label>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="selected">
+            Select a Frensh City
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Start Typing..."/>
+        </div>
+    </div>
+
+    <!--Germany-->
+    <div class="select-box">
+        <div class="Flag">
+            <img class="Flag" src="../static/img/germany.png" th:src="@{/img/germany.png}">
+        </div>
+        <div class="options-container">
+            <a href="countryPages/Germany/Aachen.html" th:href="@{/countryPages/Germany/Aachen.html.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Aachen" name="category"/>
+                    <label for="Aachen">Aachen</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Germany/augsburg.html" th:href="@{/countryPages/Germany/augsburg.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Augsburg" name="category"/>
+                    <label for="Augsburg">Augsburg</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Germany/berlin.html" th:href="@{/countryPages/Germany/berlin.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Berlin" name="category"/>
+                    <label for="Berlin">Berlin</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Germany/Bochum.html" th:href="@{/countryPages/Germany/Bochum.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Bochum" name="category"/>
+                    <label for="Bochum">Bochum</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Germany/Bonn.html" th:href="@{/countryPages/Germany/Bonn.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Bonn" name="category"/>
+                    <label for="Bonn">Bonn</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Germany/bremen.html" th:href="@{/countryPages/Germany/bremen.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Bremen" name="category"/>
+                    <label for="Bremen">Bremen</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Germany/Dortmund.html" th:href="@{/countryPages/Germany/Dortmund.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Dortmund" name="category"/>
+                    <label for="Dortmund">Dortmund</label>
+                </div>
+            </a>
+
+            <a
+                    href="countryPages/Germany/düsseldorf.html" th:href="@{/countryPages/Germany/düsseldorf.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Düsseldorf" name="category"/>
+                    <label for="Düsseldorf">Düsseldorf</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Germany/frankfurt.html" th:href="@{/countryPages/Germany/frankfurt.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Frankfurt" name="category"/>
+                    <label for="Frankfurt">Frankfurt</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Germany/hagen.html" th:href="@{/countryPages/Germany/hagen.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Hagen" name="category"/>
+                    <label for="Hagen">Hagen</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Germany/hamburg.html" th:href="@{/countryPages/Germany/hamburg.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Hamburg" name="category"/>
+                    <label for="Hamburg">Hamburg</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Germany/hamm.html" th:href="@{/countryPages/Germany/hamm.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Hamm" name="category"/>
+                    <label for="Hamm">Hamm</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Germany/hannover.html" th:href="@{/countryPages/Germany/hannover.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Hannover" name="category"/>
+                    <label for="Hannover">Hannover</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Germany/ingolstadt.html" th:href="@{/countryPages/Germany/ingolstadt.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Ingolstadt" name="category"/>
+                    <label for="Ingolstadt">Ingolstadt</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Germany/kamplintfurt.html" th:href="@{/countryPages/Germany/kamplintfurt.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Kamp Lintfort" name="category"/>
+                    <label for="Kamp Lintfort">Kamp Lintfort</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Germany/karlsruhe.html" th:href="@{/countryPages/Germany/karlsruhe.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Karlsruhe" name="category"/>
+                    <label for="Karlsruhe">Karlsruhe</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Germany/kassel.html" th:href="@{/countryPages/Germany/kassel.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Kassel" name="category"/>
+                    <label for="Kassel">Kassel</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Germany/köln.html" th:href="@{/countryPages/Germany/köln.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Köln" name="category"/>
+                    <label for="Köln">Köln</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Germany/lörrach.html" th:href="@{/countryPages/Germany/lörrach.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Lörrach" name="category"/>
+                    <label for="Lörrach">Lörrach</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Germany/mainz.html" th:href="@{/countryPages/Germany/mainz.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Mainz" name="category"/>
+                    <label for="Mainz">Mainz</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Germany/mannheim.html" th:href="@{/countryPages/Germany/mannheim.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Mannheim" name="category"/>
+                    <label for="Mannheim">Mannheim</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Germany/mülheim.html" th:href="@{/countryPages/Germany/mülheim.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Mülheim" name="category"/>
+                    <label for="Mülheim">Mülheim</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Germany/münchen.html" th:href="@{/countryPages/Germany/münchen.html.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="München" name="category"/>
+                    <label for="München">München</label>
+                </div>
+            </a>
+
+            <a
+                    href="countryPages/Germany/nürnberg.html" th:href="@{/countryPages/Germany/nürnberg.html.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Nürnberg" name="category"/>
+                    <label for="Nürnberg">Nürnberg</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Germany/oberhausen.html" th:href="@{/countryPages/Germany/oberhausen.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Oberhausen" name="category"/>
+                    <label for="Oberhausen">Oberhausen</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Germany/penzberg.html" th:href="@{/countryPages/Germany/penzberg.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Penzberg" name="category"/>
+                    <label for="Penzberg">Penzberg</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Germany/rosenheim.html" th:href="@{/countryPages/Germany/rosenheim.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Rosenheim" name="category"/>
+                    <label for="Rosenheim">Rosenheim</label>
+                </div>
+            </a>
+
+            <a
+                    href="countryPages/Germany/saarbrücken.html" th:href="@{/countryPages/Germany/saarbrücken.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Saarbrücken" name="category"/>
+                    <label for="Saarbrücken">Saarbrücken</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Germany/stuttgart.html" th:href="@{/countryPages/Germany/stuttgart.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Stuttgart" name="category"/>
+                    <label for="Stuttgart">Stattgart</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Germany/tuttlingen.html" th:href="@{/countryPages/Germany/tuttlingen.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Tuttlingen" name="category"/>
+                    <label for="Tuttlingen">Tuttlingen</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Germany/ulm.html" th:href="@{/countryPages/Germany/ulm.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Ulm" name="category"/>
+                    <label for="Ulm">Ulm</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Germany/velbert.html" th:href="@{/countryPages/Germany/velbert.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Velbert" name="category"/>
+                    <label for="Velbert">Velbert</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Germany/witten.html" th:href="@{/countryPages/Germany/witten.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Witten" name="category"/>
+                    <label for="Witten">Witten</label>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="selected">
+            Select a German City
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Start Typing..."/>
+        </div>
+    </div>
+
+
+    <!--Great Britain-->
+    <div class="select-box">
+        <div class="Flag">
+            <img class="Flag" src="../static/img/united-kingdom.png" th:src="@{/img/united-kingdom.png}">
+        </div>
+        <div class="options-container">
+            <div class="option">
+                <input type="radio" class="radio" id="" name="category"/>
+                <label for="">No city known in Mreza Mladih</label>
+            </div>
+        </div>
+
+        <div class="selected">
+            Select a British City
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Start Typing..."/>
+        </div>
+    </div>
+
+
+    <!--Ireland-->
+    <div class="select-box">
+        <div class="Flag">
+            <img class="Flag" src="../static/img/ireland.png" th:src="@{/img/ireland.png}">
+        </div>
+        <div class="options-container">
+            <div class="option">
+                <input type="radio" class="radio" id="" name="category"/>
+                <label for="">No city known in Mreza Mladih</label>
+            </div>
+        </div>
+
+        <div class="selected">
+            Select an Irish City
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Start Typing..."/>
+        </div>
+    </div>
+
+
+    <!--Italy-->
+    <div class="select-box">
+        <div class="Flag">
+            <img class="Flag" src="../static/img/italy.png" th:src="@{/img/italy.png}">
+        </div>
+        <div class="options-container">
+            <a href="countryPages/Italy/piacenze.html" th:href="@{/countryPages/Italy/piacenze.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Piacenze" name="category"/>
+                    <label for="Piacenze">Piacenze</label>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="selected">
+            Select an Italian City
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Start Typing..."/>
+        </div>
+    </div>
+
+
+    <!--Liechtenstein-->
+    <div class="select-box">
+        <div class="Flag">
+            <img class="Flag" src="../static/img/liechtenstein.png" th:src="@{/img/liechtenstein.png}">
+        </div>
+        <div class="options-container">
+
+            <div class="option">
+                <input type="radio" class="radio" id="" name="category"/>
+                <label for=""></label>
+            </div>
+        </div>
+
+        <div class="selected">
+            Select a Liechtenstein City
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Start Typing..."/>
+        </div>
+    </div>
+
+
+    <!--Luxembourg-->
+    <div class="select-box">
+        <div class="Flag">
+            <img class="Flag" src="../static/img/luxembourg.png" th:src="@{/img/luxembourg.png}">
+        </div>
+        <div class="options-container">
+            <div class="option">
+                <input type="radio" class="radio" id="" name="category"/>
+                <label for=""></label>
+            </div>
+
+        </div>
+
+        <div class="selected">
+            Select a Luxembourgish City
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Start Typing..."/>
+        </div>
+    </div>
+
+
+    <!--Netherlands-->
+    <div class="select-box">
+        <div class="Flag">
+            <img class="Flag" src="../static/img/netherlands.png" th:src="@{/img/netherlands.png}">
+        </div>
+        <div class="options-container">
+            <a
+                    href="countryPages/Netherlands/amsterdam.html"
+                    th:href="@{/countryPages/Netherlands/amsterdam.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Amsterdam" name="category"/>
+                    <label for="Amsterdam">Amsterdam</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Netherlands/arnheim.html" th:href="@{/countryPages/Netherlands/arnheim.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Arnheim" name="category"/>
+                    <label for="Arnheim">Arnheim</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Netherlands/denbosch.html" th:href="@{/countryPages/Netherlands/denbosch.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Den Bosch" name="category"/>
+                    <label for="Den Bosch">Den Bosch</label>
+                </div>
+            </a>
+
+
+            <a
+                    href="countryPages/Netherlands/eindhoven.html"
+                    th:href="@{/countryPages/Netherlands/eindhoven.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Eindhoven" name="category"/>
+                    <label for="Eindhoven">Eindhoven</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Netherlands/enschede.html" th:href="@{/countryPages/Netherlands/enschede.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Enschede" name="category"/>
+                    <label for="Enschede">Enschede</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Netherlands/nijmegen.html" th:href="@{/countryPages/Netherlands/nijmegen.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Nijmegen" name="category"/>
+                    <label for="Nijmegen">Nijmegen</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Netherlands/roermond.html" th:href="@{/countryPages/Netherlands/roermond.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Roermond" name="category"/>
+                    <label for="Roermond">Roermond</label>
+                </div>
+            </a>
+
+            <a
+                    href="countryPages/Netherlands/rotterdam.html"
+                    th:href="@{/countryPages/Netherlands/rotterdam.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Rotterdam" name="category"/>
+                    <label for="Rotterdam">Rotterdam</label>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="selected">
+            Select a dutch City
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Start Typing..."/>
+        </div>
+    </div>
+
+
+    <!--Norway-->
+    <div class="select-box">
+        <div class="Flag">
+            <img class="Flag" src="../static/img/norway.png" th:src="@{/img/norway.png}">
+        </div>
+        <div class="options-container">
+            <div class="option">
+                <input type="radio" class="radio" id="" name="category"/>
+                <label for="">No city known in Mreza Mladih</label>
+            </div>
+
+        </div>
+
+        <div class="selected">
+            Select a Norwegian City
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Start Typing..."/>
+        </div>
+    </div>
+
+
+    <!--Sweden-->
+    <div class="select-box">
+        <div class="Flag">
+            <img class="Flag" src="../static/img/sweden.png" th:src="@{/img/sweden.png}">
+        </div>
+        <div class="options-container">
+            <a href="countryPages/Sweden/boras.html" th:href="@{/countryPages/Sweden/boras.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Boras" name="category"/>
+                    <label for="Boras">Boras</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Sweden/eslöv.html" th:href="@{/countryPages/Sweden/eslöv.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Eslöv" name="category"/>
+                    <label for="Eslöv">Eslöv</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Sweden/gislaved.html" th:href="@{/countryPages/Sweden/gislaved.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Gislaved" name="category"/>
+                    <label for="Gislaved">Gislaved</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Sweden/göteborg.html" th:href="@{/countryPages/Sweden/göteborg.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Göteborg" name="category"/>
+                    <label for="Göteborg">Göteborg</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Sweden/halmstad.html" th:href="@{/countryPages/Sweden/halmstad.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Halmstad" name="category"/>
+                    <label for="Halmstad">Halmstad</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Sweden/helsingborn.html" th:href="@{/countryPages/Sweden/helsingborn.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Helsingborn" name="category"/>
+                    <label for="Helsingborn">Helsingborn</label>
+                </div>
+            </a>
+
+            <a
+                    href="countryPages/Sweden/jönkoping.html" th:href="@{/countryPages/Sweden/jönkoping.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Jönköping" name="category"/>
+                    <label for="Jönköping">Jönköping</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Sweden/landskrona.html" th:href="@{/countryPages/Sweden/landskrona.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Landskrona" name="category"/>
+                    <label for="landskrona">landskrona</label>
+                </div>
+            </a>
+
+            <a
+                    href="countryPages/Sweden/linköping.html" th:href="@{/countryPages/Sweden/linköping.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Linköping" name="category"/>
+                    <label for="Linköping">Linköping</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Sweden/malmö.html" th:href="@{/countryPages/Sweden/malmö.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Malmö" name="category"/>
+                    <label for="Malmö">Malmö</label>
+                </div>
+            </a>
+
+            <a
+                    href="countryPages/Sweden/norrköping.html" th:href="@{/countryPages/Sweden/norrköping.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Norrköpink" name="category"/>
+                    <label for="Norrköping">Norrköping</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Sweden/skovde.html" th:href="@{/countryPages/Sweden/skovde.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Skovde" name="category"/>
+                    <label for="Skovde">Skovde</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Sweden/stockholm.html" th:href="@{/countryPages/Sweden/stockholm.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Stockholm" name="category"/>
+                    <label for="Stockholm">Stockholm</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Sweden/trelleborg.html" th:href="@{/countryPages/Sweden/trelleborg.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Trelleborg" name="category"/>
+                    <label for="Trelleborg">Trelleborg</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Sweden/västeras.html" th:href="@{/countryPages/Sweden/västeras.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Västeras" name="category"/>
+                    <label for="Västeras">Västeras</label>
+                </div>
+            </a>
+
+            <a
+                    href="countryPages/Sweden/växjö.html" th:href="@{/countryPages/Sweden/växjö.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Växjö" name="category"/>
+                    <label for="Växjö">Växjö</label>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="selected">
+            Select a Swedish City
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Start Typing..."/>
+        </div>
+    </div>
+
+
+    <!--Switzerland-->
+    <div class="select-box">
+        <div class="Flag">
+            <img class="Flag" src="../static/img/switzerland.png" th:src="@{/img/switzerland.png}">
+        </div>
+        <div class="options-container">
+            <a href="countryPages/Switzerland/basel.html" th:href="@{/countryPages/Switzerland/basel.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Basel" name="category"/>
+                    <label for="Basel">Basel</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Switzerland/heiden.html" th:href="@{/countryPages/Switzerland/heiden.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Heiden" name="category"/>
+                    <label for="Heinden">Heiden</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Switzerland/luzern.html" th:href="@{/countryPages/Switzerland/luzern.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Luzern" name="category"/>
+                    <label for="Luzern">Luzern</label>
+                </div>
+            </a>
+
+            <a
+                    href="countryPages/Switzerland/oberentfelden.html"
+                    th:href="@{/countryPages/Switzerland/oberentfelden.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Oberentfelden" name="category"/>
+                    <label for="Oberentfelden">Oberentfelden</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Switzerland/ricken.html" th:href="@{/countryPages/Switzerland/ricken.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Ricken" name="category"/>
+                    <label for="Ricken">Ricken</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Switzerland/stgallen.html" th:href="@{/countryPages/Switzerland/stgallen.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="St. Gallen" name="category"/>
+                    <label for="St. Gallen">St. Gallen</label>
+                </div>
+            </a>
+
+            <a href="countryPages/Switzerland/zug.html" th:href="@{/countryPages/Switzerland/zug.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Zug" name="category"/>
+                    <label for="Zug">zug</label>
+                </div>
+            </a>
+
+            <a
+                    href="countryPages/Switzerland/zürich.html" th:href="@{/countryPages/Switzerland/zürich.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Zürich" name="category"/>
+                    <label for="Zürich">Zürich</label>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="selected">
+            Select a Swiss City
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Start Typing..."/>
+        </div>
+    </div>
+
+
+    <!--USA-->
+    <div class="select-box">
+        <div class="Flag">
+            <img class="Flag"
+                 src="../static/img/united-states-of-america.png" th:src="@{/img/united-states-of-america.png}">
+        </div>
+        <div class="options-container">
+            <a href="countryPages/USA/atlanta.html" th:href="@{/countryPages/USA/atlanta.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Atlanta" name="category"/>
+                    <label for="Atlanta">Atlanta</label>
+                </div>
+            </a>
+
+            <a href="countryPages/USA/chicago.html" th:href="@{/countryPages/USA/chicago.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Chicago" name="category"/>
+                    <label for="Chicago">Chicago</label>
+                </div>
+            </a>
+
+            <a href="countryPages/USA/colorado.html" th:href="@{/countryPages/USA/colorado.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Colorado" name="category"/>
+                    <label for="Colorado">Colorado</label>
+                </div>
+            </a>
+
+            <a href="countryPages/USA/connecticut.html" th:href="@{/countryPages/USA/connecticut.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Connecticut" name="category"/>
+                    <label for="Connecticut">Connecticut</label>
+                </div>
+            </a>
+
+            <a href="countryPages/USA/desmoines.html" th:href="@{/countryPages/USA/desmoines.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Des Moines" name="category"/>
+                    <label for="Des Moines">Des Moines</label>
+                </div>
+            </a>
+
+            <a href="countryPages/USA/detroit.html" th:href="@{/countryPages/USA/detroit.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Detroit" name="category"/>
+                    <label for="Detroit">Detroit</label>
+                </div>
+            </a>
+
+            <a href="countryPages/USA/granger.html" th:href="@{/countryPages/USA/granger.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Granger" name="category"/>
+                    <label for="Granger">Granger</label>
+                </div>
+            </a>
+
+            <a href="countryPages/USA/newhampshire.html" th:href="@{/countryPages/USA/newhampshire.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="New Hampshire" name="category"/>
+                    <label for="New Hampshire">New Hampshire</label>
+                </div>
+            </a>
+
+            <a href="countryPages/USA/newjersey.html" th:href="@{/countryPages/USA/newjersey.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="New Jersey" name="category"/>
+                    <label for="New Jersey">New Jersey</label>
+                </div>
+            </a>
+
+            <a href="countryPages/USA/newyork.html" th:href="@{/countryPages/USA/newyork.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="New York" name="category"/>
+                    <label for="New York">New York</label>
+                </div>
+            </a>
+
+            <a href="countryPages/USA/northphoenix.html" th:href="@{/countryPages/USA/northphoenix.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="North Phoenix" name="category"/>
+                    <label for="North Phoenix">North Phoenix</label>
+                </div>
+            </a>
+
+            <a href="countryPages/USA/portland.html" th:href="@{/countryPages/USA/portland.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Portland" name="category"/>
+                    <label for="Portland">Portland</label>
+                </div>
+            </a>
+
+            <a href="countryPages/USA/richmond.html" th:href="@{/countryPages/USA/richmond.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Richmond" name="category"/>
+                    <label for="Richmond">Richmond</label>
+                </div>
+            </a>
+
+            <a href="countryPages/USA/seattle.html" th:href="@{/countryPages/USA/seattle.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Seattle" name="category"/>
+                    <label for="Seattle">Seattle</label>
+                </div>
+            </a>
+
+            <a href="countryPages/USA/stlouis.html" th:href="@{/countryPages/USA/stlouis.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="St. Louis" name="category"/>
+                    <label for="St. Louis">St. Louis</label>
+                </div>
+            </a>
+
+            <a href="countryPages/USA/utah.html" th:href="@{/countryPages/USA/utah.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Utah" name="category"/>
+                    <label for="Utah">Utah</label>
+                </div>
+            </a>
+
+            <a href="countryPages/USA/utica.html" th:href="@{/countryPages/USA/utica.html}">
+                <div class="option">
+                    <input type="radio" class="radio" id="Utica" name="category"/>
+                    <label for="Utica">Utica</label>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="selected">
+            Select a US City
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Start Typing..."/>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="../static/js/main.js" th:src="@{/js/main.js}"></script>
+</body>
+
+</html>
