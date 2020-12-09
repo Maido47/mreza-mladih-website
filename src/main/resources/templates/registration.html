@@ -61,6 +61,11 @@
                 </div>
 
                 <div class="form-group">
+                    <label class="control-label" for="group"> Group </label> <input
+                        id="group" class="form-control" th:field="*{group}" required autofocus="autofocus" />
+                </div>
+
+                <div class="form-group">
                     <button type="submit" class="btn btn-success">Register</button>
                     <span>Already registered? <a href="/" th:href="@{/login}">Login
 								here</a></span>

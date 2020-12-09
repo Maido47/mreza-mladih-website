@@ -31,13 +31,18 @@
                 <a th:href="@{'/page/' + ${currentPage} + '?sortField=email&sortDir=' + ${reverseSortDir}}">
                     Email</a>
             </th>
+            <th>
+                <a th:href="@{'/page/' + ${currentPage} + '?sortField=email&sortDir=' + ${reverseSortDir}}">
+                    Dzemat</a>
+            </th>
         </tr>
         </thead>
         <tbody>
-        <tr th:each="user : ${listUsers}">
+        <tr th:each="user : ${listUsers}" th:if="${user.group} == 'Hamm'">
             <td th:text="${user.firstName}"></td>
             <td th:text="${user.lastName}"></td>
             <td th:text="${user.email}"></td>
+            <td th:text="${user.group}"></td>
         </tr>
         </tbody>
     </table>
