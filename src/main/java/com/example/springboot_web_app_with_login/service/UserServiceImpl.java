@@ -2,6 +2,8 @@ package com.example.springboot_web_app_with_login.service;
 
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 import com.example.springboot_web_app_with_login.model.Role;
@@ -9,6 +11,10 @@ import com.example.springboot_web_app_with_login.model.User;
 import com.example.springboot_web_app_with_login.repository.UserRepository;
 import com.example.springboot_web_app_with_login.web.dto.UserRegistrationDto;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -41,8 +47,42 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+    public List<User> getAllUsers() {
+        return userRepository.findAll();
+    }
 
+    @Override
+    public void saveUser(User user) {
+        this.userRepository.save(user);
+    }
+
+    @Override
+    public User getUserById(long id) {
+        Optional<User> optional = userRepository.findById(id);
+        User user = null;
+        if (optional.isPresent()) {
+            user = optional.get();
+        } else {
+            throw new RuntimeException(" User nicht gefunden : " + id);
+        }
+        return user;
+    }
+
+    @Override
+    public void deleteUserById(long id) {
+        this.userRepository.deleteById(id);
+    }
+
+    @Override
+    public Page<User> findPaginated(int pageNo, int pageSize, String sortField, String sortDirection) {
+        Sort sort = sortDirection.equalsIgnoreCase(Sort.Direction.ASC.name()) ? Sort.by(sortField).ascending() : Sort.by(sortField).descending();
+
+        Pageable pageable = PageRequest.of(pageNo - 1, pageSize, sort);
+        return this.userRepository.findAll(pageable);
+    }
+
+    @Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         User user = userRepository.findByEmail(username);
         if(user == null) {
             throw new UsernameNotFoundException("Invalid username or password.");
