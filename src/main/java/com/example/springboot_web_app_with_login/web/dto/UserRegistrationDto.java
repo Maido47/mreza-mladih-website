@@ -5,19 +5,19 @@ public class UserRegistrationDto {
     private String lastName;
     private String email;
     private String password;
-    private String group;
+    private String dzemat;
 
     public UserRegistrationDto(){
 
     }
 
-    public UserRegistrationDto(String firstName, String lastName, String email, String password, String group) {
+    public UserRegistrationDto(String firstName, String lastName, String email, String password, String dzemat) {
         super();
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.password = password;
-        this.group = group;
+        this.dzemat = dzemat;
     }
 
     public String getFirstName() {
@@ -44,10 +44,10 @@ public class UserRegistrationDto {
     public void setPassword(String password) {
         this.password = password;
     }
-    public String getGroup(){
-        return group;
+    public String getDzemat() {
+        return dzemat;
     }
-    public void setGroup(String group) {
-        this.group = group;
+    public void setDzemat(String dzemat) {
+        this.dzemat = dzemat;
     }
 }

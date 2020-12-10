@@ -38,11 +38,11 @@
         </tr>
         </thead>
         <tbody>
-        <tr th:each="user : ${listUsers}" th:if="${user.group} == 'Hamm'">
+        <tr th:each="user : ${listUsers}" th:if="${user.dzemat} == 'Hamm'">
             <td th:text="${user.firstName}"></td>
             <td th:text="${user.lastName}"></td>
             <td th:text="${user.email}"></td>
-            <td th:text="${user.group}"></td>
+            <td th:text="${user.dzemat}"></td>
         </tr>
         </tbody>
     </table>
