@@ -20,15 +20,15 @@ public class UserController {
         return findPaginated(1, "firstName" , "asc",model);
     }
 
-    @GetMapping("showNewUserForm")
+    /*@GetMapping("showNewUserForm")
     public String showNewUserForm(Model model) {
         // create model attribute to bind form data
         User user = new User();
         model.addAttribute("user", user);
         return "new_user";
-    }
+    }*/
 
-    @PostMapping("/saveUser")
+    /*@PostMapping("/saveUser")
     public String saveUser(@ModelAttribute("user") User user) {
 
         //save User to database
@@ -53,7 +53,7 @@ public class UserController {
         // call delete user method
         this.userService.deleteUserById(id);
         return "redirect:/";
-    }
+    }*/
 
     @GetMapping("/page/{pageNo}")
     public String findPaginated(@PathVariable(value = "pageNo") int pageNo, @RequestParam("sortField") String sortField, @RequestParam("sortDir") String sortDir,

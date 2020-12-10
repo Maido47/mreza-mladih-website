@@ -51,7 +51,7 @@ public class UserServiceImpl implements UserService{
         return userRepository.findAll();
     }
 
-    @Override
+    /*@Override
     public void saveUser(User user) {
         this.userRepository.save(user);
     }
@@ -71,7 +71,7 @@ public class UserServiceImpl implements UserService{
     @Override
     public void deleteUserById(long id) {
         this.userRepository.deleteById(id);
-    }
+    }*/
 
     @Override
     public Page<User> findPaginated(int pageNo, int pageSize, String sortField, String sortDirection) {

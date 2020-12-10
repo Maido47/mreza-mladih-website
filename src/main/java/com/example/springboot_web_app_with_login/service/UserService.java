@@ -11,8 +11,8 @@ import java.util.List;
 public interface UserService extends UserDetailsService{
     User save(UserRegistrationDto registrationDto);
     List<User> getAllUsers();
-    void saveUser(User User);
+    /*void saveUser(User User);
     User getUserById(long id);
-    void deleteUserById(long id);
+    void deleteUserById(long id);*/
     Page<User> findPaginated(int pageNo, int pageSize, String sortField, String sortDirection);
 }
