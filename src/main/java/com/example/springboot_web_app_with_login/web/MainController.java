@@ -16,10 +16,10 @@ public class MainController {
         return "users";
     }*/
 
-    @GetMapping("/login")
+    /*@GetMapping("/login")
     public String login() {
         return "login";
-    }
+    }*/
 
     @GetMapping("/forum")
     public String forum() {

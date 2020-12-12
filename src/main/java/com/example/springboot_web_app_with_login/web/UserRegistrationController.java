@@ -3,15 +3,11 @@ package com.example.springboot_web_app_with_login.web;
 import com.example.springboot_web_app_with_login.service.UserService;
 import com.example.springboot_web_app_with_login.web.dto.UserRegistrationDto;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 
 @Controller
-@RequestMapping("/registration")
+@RequestMapping("/login")
 public class UserRegistrationController {
 
     private UserService userService;
@@ -28,12 +24,12 @@ public class UserRegistrationController {
 
     @GetMapping
     public String showRegistrationForm() {
-        return "registration";
+        return "login";
     }
 
     @PostMapping
     public String registerUserAccount(@ModelAttribute("user") UserRegistrationDto registrationDto) {
         userService.save(registrationDto);
-        return "redirect:/registration?success";
+        return "redirect:/login?success";
     }
 }
