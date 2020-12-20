@@ -30,7 +30,7 @@
 <div class="containerLOGSIGN">
     <div class="forms-containerLOGSIGN">
         <div class="signin-signupLOGSIGN">
-            <form action="login" th:action="@{/login}" method="post" class="sign-in-formLOGSIGN">
+            <form name="login" action="login" th:action="@{/login}" method="post" class="sign-in-formLOGSIGN">
 
                 <!--error message-->
                 <div th:if="${param.error}">
@@ -81,7 +81,7 @@
                     to our awesome app!</div>
             </div>
 
-            <form action="login" th:action="@{/login}" method="post" th:object="${user}" class="sign-up-formLOGSIGN">
+            <form name="register" action="register" th:action="@{/register}" method="post" th:object="${user}" class="sign-up-formLOGSIGN">
                 <h2 class="titleLOGSIGN">Sign up</h2>
 
                 <div class="input-fieldLOGSIGN">

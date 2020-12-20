@@ -1,10 +1,17 @@
 package com.example.springboot_web_app_with_login.web;
 
+import com.example.springboot_web_app_with_login.model.User;
+import com.example.springboot_web_app_with_login.web.dto.UserRegistrationDto;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class MainController {
+
+
 
     @GetMapping("/")
     public String home() {
@@ -16,10 +23,8 @@ public class MainController {
         return "users";
     }*/
 
-    /*@GetMapping("/login")
-    public String login() {
-        return "login";
-    }*/
+
+
 
     @GetMapping("/forum")
     public String forum() {
@@ -56,7 +61,7 @@ public class MainController {
         return "countryPages/Australia/noblepark";
     }
 
-    @GetMapping("/countryPages/Austria/austria.html")
+    @GetMapping("/countryPages/Austria/graz.html")
     public String graz() {
         return "countryPages/Austria/graz";
     }
@@ -70,6 +75,7 @@ public class MainController {
     public String linz() {
         return "countryPages/Austria/linz";
     }
+
 
     @GetMapping("/countryPages/Austria/salzburg.html")
     public String salzburg() {
