@@ -44,7 +44,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter  {
         http.
                 authorizeRequests()
                     //Hier werden alle Seiten aufgeführt, die dem User zugänglich sind,also "permit"
-                    .antMatchers("/registration**", "/js/**", "/css/**", "/countryPages/**", "/img/**","/", "/impressum").permitAll()
+                    .antMatchers("/register","/login", "/js/**", "/css/**", "/countryPages/**", "/img/**","/", "/impressum").permitAll()
                     .anyRequest().authenticated()
                     .and()
                     .formLogin()
